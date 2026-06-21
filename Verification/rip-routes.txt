@@ -1,0 +1,4 @@
+MLS#show ip route rip
+     172.16.0.0/24 is subnetted, 1 subnets
+R    192.168.50.0/24 [120/1] via 10.10.40.2, 00:00:10, FastEthernet0/4
+R    192.168.60.0/24 [120/1] via 10.10.40.2, 00:00:10, FastEthernet0/4

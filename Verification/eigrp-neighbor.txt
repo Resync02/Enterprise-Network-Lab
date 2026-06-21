@@ -1,0 +1,4 @@
+IP-EIGRP neighbors for process 100
+H   Address         Interface      Hold Uptime    SRTT   RTO   Q   Seq
+                                   (sec)          (ms)        Cnt  Num
+0   10.10.30.2      Fa0/3          14   00:33:44  40     1000  0   11

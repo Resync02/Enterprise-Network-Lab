@@ -1,0 +1,23 @@
+hostname R1-OSPF
+
+interface GigabitEthernet0/0
+ ip address 10.10.20.2 255.255.255.252
+
+interface GigabitEthernet0/1
+ no ip address
+ no shutdown
+
+interface GigabitEthernet0/1.10
+ encapsulation dot1Q 10
+ ip address 192.168.10.1 255.255.255.0
+ ip helper-address 10.10.20.1
+
+interface GigabitEthernet0/1.20
+ encapsulation dot1Q 20
+ ip address 192.168.20.1 255.255.255.0
+ ip helper-address 10.10.20.1
+
+router ospf 1
+ network 10.10.20.0 0.0.0.3 area 0
+ network 192.168.10.0 0.0.0.255 area 0
+ network 192.168.20.0 0.0.0.255 area 0

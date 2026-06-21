@@ -1,0 +1,22 @@
+hostname R-BORDER
+
+interface GigabitEthernet0/0
+ ip address 200.1.1.2 255.255.255.252
+ ip nat outside
+ no shutdown
+
+interface GigabitEthernet0/1
+ ip address 10.10.10.1 255.255.255.252
+ ip nat inside
+ no shutdown
+
+access-list 1 permit 192.168.0.0 0.0.255.255
+access-list 1 permit 172.16.70.0 0.0.0.255
+
+ip nat inside source list 1 interface GigabitEthernet0/0 overload
+
+router ospf 1
+ network 10.10.10.0 0.0.0.3 area 0
+
+router bgp 65001
+ neighbor 200.1.1.1 remote-as 65000

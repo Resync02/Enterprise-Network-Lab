@@ -1,0 +1,19 @@
+hostname SW1
+
+vlan 10
+ name VLAN10
+
+vlan 20
+ name VLAN20
+
+interface FastEthernet0/1
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20
+
+interface FastEthernet0/2
+ switchport mode access
+ switchport access vlan 10
+
+interface FastEthernet0/3
+ switchport mode access
+ switchport access vlan 20

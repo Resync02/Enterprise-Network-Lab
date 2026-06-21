@@ -1,0 +1,6 @@
+R-BORDER#show ip nat translations
+Pro  Inside global     Inside local       Outside local      Outside global
+icmp 200.1.1.2:1       192.168.10.25:1    8.8.8.8:1          8.8.8.8:1
+icmp 200.1.1.2:2       192.168.10.25:2    8.8.8.8:2          8.8.8.8:2
+icmp 200.1.1.2:3       192.168.10.25:3    8.8.8.8:3          8.8.8.8:3
+icmp 200.1.1.2:4       192.168.10.25:4    8.8.8.8:4          8.8.8.8:4

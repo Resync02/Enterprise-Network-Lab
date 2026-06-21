@@ -1,0 +1,12 @@
+MLS#show ip dhcp binding
+IP address       Client-ID/              Lease expiration        Type
+                 Hardware address
+192.168.10.24    0001.636A.560E           --                     Automatic
+192.168.10.25    0090.0C76.CD24           --                     Automatic
+192.168.20.22    0002.1721.D3B0           --                     Automatic
+192.168.30.22    00D0.584B.8EAD           --                     Automatic
+192.168.30.21    00E0.F958.C501           --                     Automatic
+192.168.40.21    00E0.B0EC.18E1           --                     Automatic
+192.168.50.21    0001.C934.4081           --                     Automatic
+192.168.50.22    0060.7040.B785           --                     Automatic
+192.168.60.21    00E0.F746.C6A2           --                     Automatic

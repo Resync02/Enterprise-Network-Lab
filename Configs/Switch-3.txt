@@ -1,0 +1,19 @@
+hostname SW3
+
+vlan 50
+ name VLAN50
+
+vlan 60
+ name VLAN60
+
+interface FastEthernet0/1
+ switchport mode trunk
+ switchport trunk allowed vlan 50,60
+
+interface FastEthernet0/2
+ switchport mode access
+ switchport access vlan 50
+
+interface FastEthernet0/3
+ switchport mode access
+ switchport access vlan 60
