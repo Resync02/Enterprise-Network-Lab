@@ -28,7 +28,7 @@ The lab combines dynamic routing protocols, route redistribution, VLAN segmentat
 
 ## Network Topology
 
-![Topology](topology/topology-diagram.png)
+![Topology](Topology/topology-diagram.png)
 
 ---
 
